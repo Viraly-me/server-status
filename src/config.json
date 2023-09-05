@@ -1,6 +1,6 @@
 {
   "settings": {
-    "title": "Viraly.me Server Status",
+    "title": "Viraly.me aktueller Server-Status",
     "url": "https://status.viraly.me",
     "logo": "logo-192x192.png",
     "daysInHistogram": 90,
