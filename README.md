@@ -24,21 +24,3 @@ pnpm run lint
 # format
 pnpm run format
 ```
-
-## TODOs
-
-- [ ] YAML/TOML configure file. (Or better configuration)
-- [ ] Custom deployment with Docker.
-- [ ] Other edge computing services like Vercel?
-- [ ] Notifications
-  - [ ] Telegram
-  - [ ] Slack
-  - [ ] Discord
-- [ ] tests
-- [ ] Better TS coverage.
-- [ ] Wrangler CLI support.
-- [ ] Search and filter.
-- [ ] Actions
-  - [ ] PR
-  - [ ] Update deps
-- [ ] hooks: Husky

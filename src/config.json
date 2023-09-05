@@ -1,45 +1,54 @@
 {
   "settings": {
-    "title": "Status Page",
-    "url": "",
+    "title": "Viraly.me Server Status",
+    "url": "https://status.viraly.me",
     "logo": "logo-192x192.png",
     "daysInHistogram": 90,
     "collectResponseTimes": true,
-    "allMonitorsOperational": "All Systems Operational",
-    "notAllMonitorsOperational": "Not All Systems Operational",
-    "monitorLabelOperational": "Operational",
-    "monitorLabelNotOperational": "Not Operational",
-    "monitorLabelNoData": "No data",
-    "dayInHistogramNoData": "No data",
-    "dayInHistogramOperational": "All good",
-    "dayInHistogramNotOperational": " incident(s)"
+    "allMonitorsOperational": "Alle Systeme Online",
+    "notAllMonitorsOperational": "Systeme eingeschränkt verfügbar",
+    "monitorLabelOperational": "Online",
+    "monitorLabelNotOperational": "Eingeschränkte Verfügbarkeit",
+    "monitorLabelNoData": "Keine Daten",
+    "dayInHistogramNoData": "Keine Daten",
+    "dayInHistogramOperational": "Alles Tippi-Toppi",
+    "dayInHistogramNotOperational": " Ausfälle"
   },
   "monitors": [
     {
-      "id": "workers-cloudflare-com",
-      "name": "workers.cloudflare.com",
-      "description": "You write code. They handle the rest.",
-      "url": "https://workers.cloudflare.com/",
+      "id": "viraly-me",
+      "name": "Viraly.me",
+      "description": "Unsere Website.",
+      "url": "https://viraly.me/",
       "method": "GET",
       "expectStatus": 200,
       "followRedirect": false,
-      "linkable": false
+      "linkable": true
     },
     {
-      "id": "www-cloudflare-com",
-      "name": "www.cloudflare.com",
-      "description": "Built for anything connected to the Internet.",
-      "url": "https://www.cloudflare.com",
+      "id": "helpdesk-viraly-me",
+      "name": "Help Desk",
+      "description": "Unser Help Desk befindet sich ausserhalb unseres Netzwerkes.",
+      "url": "https://help.viraly.me/",
       "method": "GET",
       "expectStatus": 200,
       "linkable": true
     },
     {
-      "id": "blog-cloudflare-com",
-      "name": "The Cloudflare Blog",
-      "url": "https://blog.cloudflare.com/",
+      "id": "ava-one-vm",
+      "name": "ava One Cloud",
+      "url": "https://www.ava-one.viraly.me/",
       "method": "GET",
-      "expectStatus": 200
+      "expectStatus": 200,
+      "linkable": false
+    },
+    {
+      "id": "meraqi-cloud",
+      "name": "Viraly.me Meraqi™",
+      "url": "https://cloudflare.com/",
+      "method": "GET",
+      "expectStatus": 200,
+      "linkable": false
     }
   ]
 }
